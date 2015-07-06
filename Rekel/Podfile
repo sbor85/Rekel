@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+  pod 'ParseUI', '~> 1.1.4'
+  pod 'Parse', '~> 1.7.5'
+  pod 'FBSDKCoreKit',  '4.3.0'
+  pod 'FBSDKLoginKit', '4.3.0'
+  pod 'FBSDKShareKit', '4.3.0'
+  pod 'ParseFacebookUtilsV4', '~>1.7.5'
+  pod 'AFNetworking', '~> 2.5.4'
