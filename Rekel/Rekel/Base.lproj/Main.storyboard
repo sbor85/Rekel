@@ -48,6 +48,9 @@ and sell vintage kids clothing</string>
                                 <state key="normal" image="Facebook Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fbLoginButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aUE-Xb-5eC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already Registered?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-06-bCi">
                                 <rect key="frame" x="222" y="433" width="109" height="14"/>
