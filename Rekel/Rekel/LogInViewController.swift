@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Rekel Team. All rights reserved.
 //
 
+//just a test for git
+
 import UIKit
 
 class LogInViewController: UIViewController
