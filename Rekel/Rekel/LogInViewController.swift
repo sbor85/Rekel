@@ -17,22 +17,22 @@ class LogInViewController: UIViewController
     super.viewDidLoad()
     
   }
-  
-  @IBAction func fbLoginButtonClicked(sender: UIButton)
-  {
-    var fbLoginManager: FBSDKLoginManager = FBSDKLoginManager()
-    // var permissions = ["public_profile", "email", "user_friends"]
-    fbLoginManager.logInWithReadPermissions(["email"], handler: { (result, error) -> Void in
-      if (error == nil) {
-        var fbLoginResult: FBSDKLoginManagerLoginResult = result
-        if (fbLoginResult.grantedPermissions.contains("email"))
-        {
-          self.getFBUserData()
-          fbLoginManager.logOut()
-        }
-      }
-    })
-  }
+    
+    
+    @IBAction func fbLoginButtonClicked(sender: AnyObject) {
+        var fbLoginManager: FBSDKLoginManager = FBSDKLoginManager()
+        // var permissions = ["public_profile", "email", "user_friends"]
+        fbLoginManager.logInWithReadPermissions(["email"], handler: { (result, error) -> Void in
+            if (error == nil) {
+                var fbLoginResult: FBSDKLoginManagerLoginResult = result
+                if (fbLoginResult.grantedPermissions.contains("email"))
+                {
+                    self.getFBUserData()
+                    fbLoginManager.logOut()
+                }
+            }
+        })
+    }
   
   func getFBUserData() {
     if((FBSDKAccessToken.currentAccessToken()) != nil) {
